@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  max-width: 100%;
   animation: fadeIn 2.5s;
 }
 
@@ -245,9 +246,6 @@ footer .footer-flex .ul-brands {
 }
 
 @media (min-width: 601px) {
-  html {
-    font-size: 16px;
-  }
   header {
     margin-bottom: 1.5rem;
   }
@@ -266,10 +264,18 @@ footer .footer-flex .ul-brands {
     justify-content: space-between;
     align-items: center;
   }
+
   .hero .desktop-flex .flex-1 {
+    width: 40rem;
     padding-right: 2rem;
+    margin-right: 2rem;
     min-height: 100%;
   }
+  .hero .desktop-flex .flex-1 h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
   .hero .desktop-flex button {
     padding: 0.7rem 2rem;
   }
@@ -278,10 +284,10 @@ footer .footer-flex .ul-brands {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
   .services .card > * {
-    width: 40%;
+    width: 45%;
   }
 
   .services .card aside {
@@ -297,8 +303,11 @@ footer .footer-flex .ul-brands {
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 20px;
+  footer {
+    font-size: 0.7rem;
+  }
+  footer .footer-logo {
+    margin-left: 1rem;
   }
   footer .footer-flex {
     display: flex;
@@ -317,6 +326,15 @@ footer .footer-flex .ul-brands {
 }
 
 @media (min-width: 1440px) {
+  footer {
+    font-size: 1rem;
+  }
+  footer .footer-logo {
+    margin-left: 3.5rem;
+  }
+  html {
+    font-size: 20px;
+  }
   .container {
     min-height: 100vh;
   }
