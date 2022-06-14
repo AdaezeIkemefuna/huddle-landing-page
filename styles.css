@@ -298,7 +298,7 @@ footer .footer-flex .ul-brands {
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 20px;
   }
   footer .footer-flex {
     display: flex;
